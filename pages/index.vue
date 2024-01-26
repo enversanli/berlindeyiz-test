@@ -110,6 +110,8 @@ import MetaHead from "../components/meta/MetaHead.vue";
   const services = ref([]);
   const lastAddedServices = ref([]);
 
+services.value = await $fetch("/api/activities");
+lastAddedServices.value = await $fetch("/api/last-added");
 
   const filterServices = async (expected, isRequest = 'status') => {
 

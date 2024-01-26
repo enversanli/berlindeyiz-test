@@ -78,7 +78,6 @@ const services = ref([]);
 const lastAddedServices = ref([]);
 
 services.value = await $fetch("/api/activities?category=&type=etkinlikler&date=&city=&status=all");
-
 lastAddedServices.value = await $fetch("/api/last-added");
 
 

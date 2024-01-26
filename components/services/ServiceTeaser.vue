@@ -110,10 +110,6 @@ export default {
   name: "ServiceTeaser",
   props: ["services"],
 
-  data() {
-    return {};
-  },
-
   methods: {
     generateImgUrl(service) {
       return import.meta.env.VITE_API_URL + "/storage/" + service.logo;
